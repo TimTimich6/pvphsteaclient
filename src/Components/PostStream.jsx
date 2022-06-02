@@ -12,7 +12,7 @@ const PostStream = (props) => {
       }
     });
 
-    const socket = io("http://localhost:3080");
+    const socket = io(`${process.env.REACT_APP_URL || "http://localhost:3080"}`);
     socket.on("connect", () => {
       console.log("connected");
     });
