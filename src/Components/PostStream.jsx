@@ -27,16 +27,20 @@ const PostStream = (props) => {
     <div className={cl.total}>
       <label className={cl.title}>Slanders</label>
       <div className={cl.stream}>
-        {posts
-          .slice(0)
-          .reverse()
-          .map((post) => {
-            return (
-              <Post key={post.deletetime} time={post.deletetime} id={post.id}>
-                {post.text}
-              </Post>
-            );
-          })}
+        {posts.length > 0 ? (
+          posts
+            .slice(0)
+            .reverse()
+            .map((post) => {
+              return (
+                <Post key={post.deletetime} time={post.deletetime} id={post.id}>
+                  {post.text}
+                </Post>
+              );
+            })
+        ) : (
+          <h3 className={cl.empty}>No posts yet, be the first one!</h3>
+        )}
       </div>
     </div>
   );
