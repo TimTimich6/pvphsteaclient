@@ -22,6 +22,12 @@ const PostStream = (props) => {
         setPosts((prev) => [...prev, data]);
       }
     });
+    socket.on("clear", () => {
+      setPosts([]);
+    });
+    socket.on("delete", (data) => {
+      setPosts(data);
+    });
   }, []);
   return (
     <div className={cl.total}>

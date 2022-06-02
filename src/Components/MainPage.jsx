@@ -7,10 +7,7 @@ const MainPage = (props) => {
     <div className={cl.total}>
       <div className={cl.howto}>
         <h1>How does this work?</h1>
-        <p>
-          Anynomously post any slander regardless PVPHS or PV area in general. It can be trash talk, leaks, disses. Posts will be deleted
-          automatically after 24 hours.
-        </p>
+        <p>Anynomously post any slander regardless PVPHS or PV in general. Posts will be deleted automatically after 24 hours.</p>
       </div>
       <CreatePost />
       <PostStream />
