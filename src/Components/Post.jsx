@@ -5,7 +5,7 @@ const Post = (props) => {
       <div className={cl.topPart}>
         <img className={cl.pfp} src="./default-avatar.png" alt="" />
         <h3 className={cl.username}>anon{props.id.substring(0, 8)}</h3>
-        <p className={cl.time}>Deletes on {Date(props.time).substring(0, 24)}</p>
+        <p className={cl.time}>Deletes on {new Date(props.time).toString().substring(0, 24)}</p>
       </div>
       <p className={cl.text}>{props.children}</p>
     </div>
