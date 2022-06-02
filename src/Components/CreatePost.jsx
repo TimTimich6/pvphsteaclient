@@ -41,7 +41,7 @@ const CreatePost = (props) => {
         cols="40"
         rows="7"
         className={cl.input}
-        placeholder="Create your post here"
+        placeholder="Write your slander here"
         value={text}
         onChange={(e) => setText(e.target.value)}
       >
