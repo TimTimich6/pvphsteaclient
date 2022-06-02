@@ -1,0 +1,71 @@
+.stream {
+  display: flex;
+  flex-direction: column;
+  /* background-color: #22364f; */
+  min-height: 8rem;
+  border-radius: 1rem;
+  /* padding: 1rem; */
+  gap: 1rem;
+}
+
+.post {
+  background-color: rgb(203, 217, 246);
+  padding: 1.3rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.topPart {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.pfp {
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.username {
+  font-size: 1.5rem;
+  color: rgb(64, 58, 170);
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.text {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: rgb(25, 34, 66);
+  overflow-wrap: break-word;
+}
+
+.title {
+  font-size: 2.3rem;
+  color: white;
+}
+.time {
+  font-size: 1.2rem;
+  color: rgb(67, 124, 230);
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 1.7rem;
+  }
+  .username {
+    font-size: 1.3rem;
+  }
+  .pfp {
+    height: 2.5rem;
+  }
+  .text {
+    font-size: 1.3rem;
+  }
+  .time {
+    font-size: 0.8rem;
+  }
+}

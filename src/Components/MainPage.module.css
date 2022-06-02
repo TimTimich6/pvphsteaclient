@@ -1,0 +1,32 @@
+.total {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  gap: 2rem;
+}
+
+.howto {
+  color: white;
+  font-size: 1.3rem;
+}
+.howto > h1 {
+  font-weight: normal;
+}
+.howto > p {
+  color: rgb(112, 224, 228);
+  font-size: 1.4rem;
+  font-weight: 100;
+}
+@media screen and (max-width: 600px) {
+  .total {
+    width: 100%;
+  }
+  .howto > h1 {
+    font-size: 2rem;
+  }
+  .howto > p {
+    font-size: 1.3rem;
+  }
+}

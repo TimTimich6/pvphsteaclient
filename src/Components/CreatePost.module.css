@@ -1,0 +1,56 @@
+.input {
+  font-size: 1.6rem;
+  padding: 1rem;
+  border-radius: 1.3rem;
+  border: 4px rgb(199, 182, 96) dashed;
+  background-color: #fbf4d2;
+  color: rgb(123, 104, 51);
+  resize: none;
+}
+
+.input:focus {
+  outline: none;
+}
+.label {
+  font-size: 2.3rem;
+  text-align: left;
+  width: 100%;
+  color: white;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+  gap: 0.5rem;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+.button {
+  font-size: 2.3rem;
+  white-space: nowrap;
+  background-color: #a8d0e6;
+  color: white;
+}
+.feedback {
+  color: rgb(213, 213, 213);
+  font-size: 1.6rem;
+}
+@media screen and (max-width: 600px) {
+  .input {
+    font-size: 1rem;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  .label {
+    font-size: 1.6rem;
+  }
+  .button {
+    font-size: 1.4rem;
+  }
+  .feedback {
+    font-size: 1rem;
+  }
+}
